@@ -58,13 +58,24 @@
             </li>
           </ul>
         </address>
+
+        <!-- Mobile burger menu -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="main-section-solution">
         <div class="container">
           <h1 class="main-section-title">
-            Effective Solutions for Your Business
+            Effective Solutions For Your Business
           </h1>
           <button type="button" class="button-text-section" data-modal-open>
             Order Service
@@ -155,7 +166,12 @@
           <h2 class="section-portfolio-title">Our Team</h2>
           <ul class="section-portfolio-list list">
             <li class="section-background-color">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/mark@1.jpg 1x, ./images/mark@2.jpg 2x"
+                src="./images/mark@1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="image-potfolio-container">
                 <h3 class="section-images-title">Mark Guerrero</h3>
                 <p class="section-images-text">Product Designer</p>
@@ -482,19 +498,117 @@
               id="user-privacy"
               value="true"
             />
-            <label class="modal-privacy-title" for="user-privacy"></label>
-            <span class="modal-privacy-policy">
-              <svg class="modal-icon-checkbox" width="10" height="8">
-                <use href="./images/icons.svg#icon-property"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="modal-link-privacy" href="">Privacy Policy</a>
+            <label class="modal-privacy-title" for="user-privacy">
+              <span class="modal-privacy-policy">
+                <svg class="modal-icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-property"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-link-privacy" href="">Privacy Policy</a></label
+            >
           </div>
         </form>
         <button type="button" class="button-modal-send">Send</button>
       </div>
     </div>
+
+    <!-- Menu mobile style -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-button-close js-close-menu" type="button">
+        <svg class="close-button" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="list-nav-menu list">
+        <li class="list-nav-menu-item">
+          <a class="list-nav-menu-link link is-active" href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="list-nav-menu-item">
+          <a class="list-nav-menu-link link" href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li class="list-nav-menu-item">
+          <a class="list-nav-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="list-contact-menu list">
+        <li class="list-contact-menu-item">
+          <a
+            class="list-contact-menu-link link"
+            href="tel:+110001111111"
+            target="_blank"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="list-contact-menu-item">
+          <a
+            class="list-contact-menu-mail link"
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu-social list">
+        <li class="menu-social-item">
+          <a
+            class="menu-social-item-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="icon-menu-social" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-item-link"
+            href="https://twitter.com/"
+            target="_blank"
+          >
+            <svg class="icon-menu-social" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-item-link"
+            href="https://facebook.com/"
+            target="_blank"
+          >
+            <svg class="icon-menu-social" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-item-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+          >
+            <svg class="icon-menu-social" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
