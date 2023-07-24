@@ -142,10 +142,19 @@
           <h2 class="section-doing-title">What are we doing</h2>
           <ul class="images-doing-list list">
             <li class="calculate-width">
-              <img src="./images/monitor@1.jpg" alt="monitor" width="360" />
+              <img
+                srcset="./images/monitor@1.jpg 1x, ./images/monitor@2.jpg 2x"
+                src="./images/monitor@1.jpg"
+                alt="monitor"
+                width="360"
+              />
             </li>
             <li class="calculate-width">
               <img
+                srcset="
+                  ./images/phone-monitors@1.jpg 1x,
+                  ./images/phone-monitor@2.jpg  2x
+                "
                 src="./images/phone-monitors@1.jpg"
                 alt="phone monitor"
                 width="360"
@@ -153,6 +162,10 @@
             </li>
             <li class="calculate-width">
               <img
+                srcset="
+                  ./images/phone-in-hand@1.jpg 1x,
+                  ./images/phone-in-hand@2.jpg 2x
+                "
                 src="./images/phone-in-hand@1.jpg"
                 alt="phone in hand"
                 width="360"
@@ -208,7 +221,12 @@
               </div>
             </li>
             <li class="section-background-color">
-              <img src="./images/tom@1.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/tom@1.jpg 1x, ./images/tom@2.jpg 2x"
+                src="./images/tom@1.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="image-potfolio-container">
                 <h3 class="section-images-title">Tom Ford</h3>
                 <p class="section-images-text">Frontend Developer</p>
@@ -246,6 +264,7 @@
             </li>
             <li class="section-background-color">
               <img
+                srcset="./images/camila@1.jpg 1x, ./images/camila@2.jpg 2x"
                 src="./images/camila@1.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -287,6 +306,7 @@
             </li>
             <li class="section-background-color">
               <img
+                srcset="./images/daniel@1.jpg 1x, ./images/daniel@2.jpg 2x"
                 src="./images/daniel@1.jpg"
                 alt="Daniel Wilson"
                 width="264"
