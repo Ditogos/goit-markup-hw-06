@@ -299,7 +299,7 @@ img {
   display: block;
 }
 
-/* .main-section-solution {
+.main-section-solution {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -308,7 +308,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-} */
+}
 
 /* Mobile styles section solution */
 
@@ -342,7 +342,7 @@ img {
 
 /* Tablet styles section solution  */
 
-@media only screen and (min-width: 429px) and (max-width: 1157px) {
+@media only screen and (min-width: 429px) and (max-width: 768px) {
   .main-section-solution {
     padding: 112px 0 112px 0;
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -372,10 +372,10 @@ img {
 
 /* Desktop styles section solution  */
 
-@media screen and (min-width: 1158px) and (max-width: 2000px) {
+@media screen and (min-width: 769px) {
   .main-section-solution {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/bgtab@1x.jpg);
+      url(../images/bgdesc@1x.jpg);
     padding: 188px 0 188px 0;
     background-size: cover;
   }
@@ -384,7 +384,7 @@ img {
     (min-resolution: 2dppx) {
     .main-section-solution {
       background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/bgtab@2x.jpg);
+        url(../images/bgdesc@2x.jpg);
       background-size: cover;
     }
   }
